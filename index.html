@@ -2,413 +2,413 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forex Masterclass - Free Training | Limited Spots</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Forex Club | Professional Trading Signals on Telegram</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16758637059"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+      gtag('config', 'AW-16758637059');
+    </script>
+    
+    <!-- Event snippet for conversion -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16758637059/Tr7gCM759ZscEIOEkrc-',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '937489149097106');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=937489149097106&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #0a0f1c;
-            color: white;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #0a0e1a;
+            min-height: 100vh;
+            padding: 16px;
         }
-
-        /* Timer Section */
-        .timer-section {
-            background: linear-gradient(135deg, #0f172a, #0a0f1c);
-            padding: 20px;
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background: #0f121f;
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,215,0,0.15);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0a0e1a 0%, #121625 100%);
+            padding: 32px 24px 28px;
             text-align: center;
-            border-bottom: 2px solid #fbbf24;
+            border-bottom: 1px solid rgba(255,215,0,0.1);
         }
-
-        .timer-box {
-            background: #1e293b;
-            display: inline-block;
-            padding: 15px 30px;
-            border-radius: 50px;
-            box-shadow: 0 0 20px rgba(251,191,36,0.3);
+        
+        .logo {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 36px;
+            box-shadow: 0 10px 25px -5px rgba(251,191,36,0.3);
         }
-
-        .timer-box span {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #fbbf24;
-            margin: 0 10px;
+        
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 6px;
         }
-
-        .timer-label {
-            font-size: 0.8rem;
-            color: #94a3b8;
+        
+        .header p {
+            font-size: 13px;
+            color: #8b92a8;
         }
-
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(145deg, #0a0f1c, #0d1525);
-        }
-
-        .badge {
-            background: #fbbf24;
-            color: #0a0f1c;
-            display: inline-block;
-            padding: 6px 14px;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 0.8rem;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 15px;
-        }
-
-        .hero h1 span {
-            color: #fbbf24;
-        }
-
-        .hero p {
-            color: #94a3b8;
-            max-width: 700px;
-            margin: 0 auto 25px;
-            font-size: 1.1rem;
-        }
-
-        /* Stats Section */
-        .stats {
+        
+        .rating {
             display: flex;
             justify-content: center;
-            gap: 40px;
+            gap: 10px;
+            margin-top: 16px;
             flex-wrap: wrap;
-            margin-top: 30px;
         }
-
-        .stat {
+        
+        .rating span {
+            background: rgba(255,215,0,0.1);
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 11px;
+            color: #fbbf24;
+            border: 1px solid rgba(251,191,36,0.2);
+        }
+        
+        .top-btn {
+            display: block;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #0a0e1a;
+            border: none;
+            padding: 14px 20px;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 60px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        
+        .top-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(251,191,36,0.4);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background: rgba(255,215,0,0.08);
+        }
+        
+        .stat-item {
+            background: #0f121f;
+            padding: 18px 12px;
             text-align: center;
         }
-
+        
         .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
+            font-size: 24px;
+            font-weight: 800;
             color: #fbbf24;
         }
-
-        /* Main Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
+        
+        .stat-label {
+            font-size: 10px;
+            color: #8b92a8;
+            margin-top: 4px;
         }
-
-        /* Left Content */
+        
         .content {
-            flex: 1.2;
+            padding: 24px;
         }
-
-        .content h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            border-left: 4px solid #fbbf24;
-            padding-left: 15px;
+        
+        .feature-list {
+            margin-bottom: 24px;
         }
-
-        .benefits {
-            list-style: none;
-            margin: 25px 0;
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
         }
-
-        .benefits li {
-            margin-bottom: 15px;
+        
+        .feature-icon {
+            width: 44px;
+            height: 44px;
+            background: rgba(251,191,36,0.1);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+        
+        .feature-text {
+            flex: 1;
+        }
+        
+        .feature-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+        }
+        
+        .feature-desc {
+            font-size: 12px;
+            color: #8b92a8;
+        }
+        
+        .steps {
+            background: rgba(251,191,36,0.05);
+            border-radius: 20px;
+            padding: 16px;
+            margin: 20px 0;
+            border: 1px solid rgba(251,191,36,0.1);
+        }
+        
+        .step {
             display: flex;
             align-items: center;
             gap: 12px;
+            padding: 8px 0;
         }
-
-        .benefits li::before {
-            content: "✓";
-            color: #fbbf24;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        /* Trust Badges */
-        .trust-badges {
-            background: #0f172a;
-            padding: 20px;
-            border-radius: 16px;
-            margin-top: 25px;
-            border: 1px solid #1e293b;
-        }
-
-        .trust-badges h4 {
-            color: #fbbf24;
-            margin-bottom: 15px;
-        }
-
-        .badges-row {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .badge-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.85rem;
-            color: #94a3b8;
-        }
-
-        .badge-item i {
-            font-size: 1.2rem;
-            color: #fbbf24;
-        }
-
-        /* Right Form */
-        .form-box {
-            flex: 0.8;
-            background: #0f172a;
-            padding: 35px;
-            border-radius: 24px;
-            border: 1px solid #1e293b;
-        }
-
-        .form-box h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        .form-box p {
-            text-align: center;
-            color: #94a3b8;
-            margin-bottom: 25px;
-            font-size: 0.9rem;
-        }
-
-        .form-group {
-            margin-bottom: 18px;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 14px 16px;
-            background: #1e293b;
-            border: 1px solid #334155;
-            border-radius: 12px;
-            color: white;
-            font-size: 1rem;
-        }
-
-        .form-group input:focus {
-            outline: none;
-            border-color: #fbbf24;
-        }
-
-        .btn-submit {
-            width: 100%;
-            padding: 14px;
-            background: #fbbf24;
-            color: #0a0f1c;
-            border: none;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .btn-submit:hover {
-            background: #eab308;
-            transform: scale(1.02);
-        }
-
-        .telegram-btn {
-            width: 100%;
-            padding: 14px;
-            background: #0088cc;
-            color: white;
-            border: none;
-            border-radius: 12px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 15px;
+        
+        .step-num {
+            width: 28px;
+            height: 28px;
+            background: rgba(251,191,36,0.2);
+            border-radius: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fbbf24;
+        }
+        
+        .step-text {
+            font-size: 13px;
+            color: #cbd5e1;
+        }
+        
+        .bottom-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #0a0e1a;
+            border: none;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 60px;
+            cursor: pointer;
+            text-align: center;
             text-decoration: none;
+            margin: 20px 0 10px;
+            transition: all 0.3s;
         }
-
-        .telegram-btn:hover {
-            background: #0077b3;
+        
+        .bottom-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -10px rgba(251,191,36,0.4);
         }
-
-        .guarantee {
+        
+        .badge {
+            display: inline-block;
+            background: rgba(251,191,36,0.15);
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 11px;
+            color: #fbbf24;
+            margin-bottom: 16px;
+        }
+        
+        .footer {
+            padding: 16px 24px;
             text-align: center;
-            margin-top: 20px;
-            font-size: 0.75rem;
-            color: #64748b;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            background: #0a0e1a;
         }
-
-        /* Footer */
-        footer {
+        
+        .footer-text {
+            font-size: 10px;
+            color: #5b6380;
+        }
+        
+        .limited {
             text-align: center;
-            padding: 30px;
-            border-top: 1px solid #1e293b;
-            color: #64748b;
-            font-size: 0.8rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            .container {
-                flex-direction: column;
-            }
-            .timer-box span {
-                font-size: 1.2rem;
-            }
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Live Timer Section -->
-    <div class="timer-section">
-        <div class="timer-box">
-            🔥 <strong>Limited Time Offer!</strong> 🔥
-            <div id="timer" style="display: inline-block; margin-left: 15px;">
-                <span id="hours">00</span><span class="timer-label">Hrs</span>
-                <span id="minutes">00</span><span class="timer-label">Mins</span>
-                <span id="seconds">00</span><span class="timer-label">Secs</span>
+<div class="container">
+    <div class="card">
+        
+        <div class="header">
+            <div class="logo">📊</div>
+            <h1>Forex Club</h1>
+            <p>Professional Trading Signals on Telegram</p>
+            <div class="rating">
+                <span>⭐ 4.9 Rating</span>
+                <span>🔒 Verified</span>
+                <span>💰 Free</span>
             </div>
+            
+            <!-- ✅ TOP BUTTON with NEW Telegram Link ✅ -->
+            <a href="https://t.me/+3zAwhI6i5pIwOGY0" class="top-btn" target="_blank"
+               onclick="gtag_report_conversion('https://t.me/+3zAwhI6i5pIwOGY0'); fbq('track', 'Lead'); return true;">
+                📱 Join Telegram Channel →
+            </a>
         </div>
-    </div>
-
-    <!-- Hero Section -->
-    <div class="hero">
-        <div class="badge">⭐ Trusted by 15,000+ Traders ⭐</div>
-        <h1>Free <span>Forex Masterclass</span></h1>
-        <p>Learn how to make $500-$1000 weekly with our proven strategy. Live sessions + expert mentorship + Telegram community.</p>
         
         <div class="stats">
-            <div class="stat">
-                <div class="stat-number">15,000+</div>
-                <div>Active Students</div>
+            <div class="stat-item">
+                <div class="stat-number">2,847</div>
+                <div class="stat-label">Active Members</div>
             </div>
-            <div class="stat">
-                <div class="stat-number">₹45Cr+</div>
-                <div>Profit Generated</div>
+            <div class="stat-item">
+                <div class="stat-number">89%</div>
+                <div class="stat-label">Win Rate</div>
             </div>
-            <div class="stat">
-                <div class="stat-number">4.9⭐</div>
-                <div>Rating (500+ Reviews)</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Left Content -->
-        <div class="content">
-            <h2>What You'll Learn 🎯</h2>
-            <ul class="benefits">
-                <li>Secret Forex strategy used by professionals</li>
-                <li>Risk management & money multiplication tricks</li>
-                <li>Live market analysis with expert traders</li>
-                <li>Free indicators + trading bots</li>
-                <li>24/7 Telegram support & signals</li>
-            </ul>
-
-            <!-- Trust Badges -->
-            <div class="trust-badges">
-                <h4>🔒 We're Trusted By —</h4>
-                <div class="badges-row">
-                    <div class="badge-item"><i>✓</i> 500+ Active Members</div>
-                    <div class="badge-item"><i>✓</i> 4.9 Google Rating</div>
-                    <div class="badge-item"><i>✓</i> 100% Free Training</div>
-                    <div class="badge-item"><i>✓</i> No Hidden Charges</div>
-                </div>
-            </div>
-
-            <!-- Telegram Join Option -->
-            <div class="trust-badges" style="margin-top: 15px; background: #1e293b;">
-                <h4>📱 Join Our Telegram Community</h4>
-                <p style="font-size: 0.9rem;">Get daily signals, live updates & expert support</p>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Support</div>
             </div>
         </div>
-
-        <!-- Right Form -->
-        <div class="form-box">
-            <h3>Claim Your Free Spot 🚀</h3>
-            <p>Limited seats available. Fill the form now.</p>
-            
-            <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Full Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email Address" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="phone" placeholder="WhatsApp Number" required>
-                </div>
-                <button type="submit" class="btn-submit">Get Instant Access →</button>
-            </form>
-
-            <!-- Telegram Channel Link -->
-            <a href="https://t.me/your_channel_link" target="_blank" class="telegram-btn">
-                <i>📱</i> Join Telegram Channel (Free Signals)
-            </a>
-
-            <div class="guarantee">
-                🔒 Your information is safe. 100% No Spam Guarantee.
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        © 2024 Forex Masterclass | Privacy Policy | Terms & Conditions
-    </footer>
-
-    <!-- Timer Script -->
-    <script>
-        function startTimer(hours, minutes, seconds) {
-            let totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
-            
-            const timerInterval = setInterval(() => {
-                if (totalSeconds <= 0) {
-                    clearInterval(timerInterval);
-                    document.getElementById('timer').innerHTML = "⏰ Offer Expired! Join Now →";
-                    return;
-                }
-                
-                const hrs = Math.floor(totalSeconds / 3600);
-                const mins = Math.floor((totalSeconds % 3600) / 60);
-                const secs = totalSeconds % 60;
-                
-                document.getElementById('hours').textContent = String(hrs).padStart(2, '0');
-                document.getElementById('minutes').textContent = String(mins).padStart(2, '0');
-                document.getElementById('seconds').textContent = String(secs).padStart(2, '0');
-                
-                totalSeconds--;
-            }, 1000);
-        }
         
-        // Timer set: 5 hours 0 minutes 0 seconds
-        startTimer(5, 0, 0);
-    </script>
+        <div class="content">
+            
+            <div class="limited">
+                <div class="badge">🔥 LIMITED SPOTS — 47 LEFT TODAY</div>
+            </div>
+            
+            <div class="feature-list">
+                <div class="feature">
+                    <div class="feature-icon">📈</div>
+                    <div class="feature-text">
+                        <div class="feature-title">Daily XAUUSD Signals</div>
+                        <div class="feature-desc">6-8 premium signals with entry, SL & TP</div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⏱️</div>
+                    <div class="feature-text">
+                        <div class="feature-title">Real-time Alerts</div>
+                        <div class="feature-desc">London & NY session coverage</div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🆓</div>
+                    <div class="feature-text">
+                        <div class="feature-title">100% Free</div>
+                        <div class="feature-desc">No fees, no premium groups</div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">👥</div>
+                    <div class="feature-text">
+                        <div class="feature-title">Active Community</div>
+                        <div class="feature-desc">Discuss with 2,800+ traders</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-text">Click "Join Telegram Channel"</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-text">Open Telegram App</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-text">Start Receiving Signals</div>
+                </div>
+            </div>
+            
+            <!-- ✅ BOTTOM BUTTON with NEW Telegram Link ✅ -->
+            <a href="https://t.me/+3zAwhI6i5pIwOGY0" class="bottom-btn" target="_blank"
+               onclick="gtag_report_conversion('https://t.me/+3zAwhI6i5pIwOGY0'); fbq('track', 'Lead'); return true;">
+                🔥 JOIN TELEGRAM CHANNEL NOW
+            </a>
+            
+        </div>
+        
+        <div class="footer">
+            <div class="footer-text">
+                🔒 No spam. Educational purposes only. Trading involves risk.
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    let count = 2847;
+    let countElement = document.querySelectorAll('.stat-number')[0];
+    setInterval(() => {
+        count += Math.floor(Math.random() * 4) + 1;
+        if (countElement) countElement.textContent = count.toLocaleString();
+    }, 45000);
+</script>
+
 </body>
-  </html>
+                    </html>
