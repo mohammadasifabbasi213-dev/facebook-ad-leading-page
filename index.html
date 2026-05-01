@@ -1,414 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Forex Club | Professional Trading Signals on Telegram</title>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16758637059"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-      gtag('config', 'AW-16758637059');
-    </script>
-    
-    <!-- Event snippet for conversion -->
-    <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-16758637059/Tr7gCM759ZscEIOEkrc-',
-          'event_callback': callback
-      });
-      return false;
-    }
-    </script>
-    
-    <!-- Meta Pixel Code (NEW ID: 1311904284207862) -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1311904284207862');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1311904284207862&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: #0a0e1a;
-            min-height: 100vh;
-            padding: 16px;
-        }
-        
-        .container {
-            max-width: 500px;
-            width: 100%;
-            margin: 0 auto;
-        }
-        
-        .card {
-            background: #0f121f;
-            border-radius: 32px;
-            overflow: hidden;
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
-            border: 1px solid rgba(255,215,0,0.15);
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #0a0e1a 0%, #121625 100%);
-            padding: 32px 24px 28px;
-            text-align: center;
-            border-bottom: 1px solid rgba(255,215,0,0.1);
-        }
-        
-        .logo {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, #fbbf24, #f59e0b);
-            border-radius: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 16px;
-            font-size: 36px;
-            box-shadow: 0 10px 25px -5px rgba(251,191,36,0.3);
-        }
-        
-        .header h1 {
-            font-size: 28px;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 6px;
-        }
-        
-        .header p {
-            font-size: 13px;
-            color: #8b92a8;
-        }
-        
-        .rating {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 16px;
-            flex-wrap: wrap;
-        }
-        
-        .rating span {
-            background: rgba(255,215,0,0.1);
-            padding: 5px 14px;
-            border-radius: 30px;
-            font-size: 11px;
-            color: #fbbf24;
-            border: 1px solid rgba(251,191,36,0.2);
-        }
-        
-        .top-btn {
-            display: block;
-            background: linear-gradient(135deg, #fbbf24, #f59e0b);
-            color: #0a0e1a;
-            border: none;
-            padding: 14px 20px;
-            font-size: 15px;
-            font-weight: 700;
-            border-radius: 60px;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            margin-top: 20px;
-            transition: all 0.3s;
-        }
-        
-        .top-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px -5px rgba(251,191,36,0.4);
-        }
-        
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            background: rgba(255,215,0,0.08);
-        }
-        
-        .stat-item {
-            background: #0f121f;
-            padding: 18px 12px;
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 24px;
-            font-weight: 800;
-            color: #fbbf24;
-        }
-        
-        .stat-label {
-            font-size: 10px;
-            color: #8b92a8;
-            margin-top: 4px;
-        }
-        
-        .content {
-            padding: 24px;
-        }
-        
-        .feature-list {
-            margin-bottom: 24px;
-        }
-        
-        .feature {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            padding: 12px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
-        
-        .feature-icon {
-            width: 44px;
-            height: 44px;
-            background: rgba(251,191,36,0.1);
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 22px;
-        }
-        
-        .feature-text {
-            flex: 1;
-        }
-        
-        .feature-title {
-            font-size: 15px;
-            font-weight: 600;
-            color: #fff;
-        }
-        
-        .feature-desc {
-            font-size: 12px;
-            color: #8b92a8;
-        }
-        
-        .steps {
-            background: rgba(251,191,36,0.05);
-            border-radius: 20px;
-            padding: 16px;
-            margin: 20px 0;
-            border: 1px solid rgba(251,191,36,0.1);
-        }
-        
-        .step {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 8px 0;
-        }
-        
-        .step-num {
-            width: 28px;
-            height: 28px;
-            background: rgba(251,191,36,0.2);
-            border-radius: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: 700;
-            color: #fbbf24;
-        }
-        
-        .step-text {
-            font-size: 13px;
-            color: #cbd5e1;
-        }
-        
-        .bottom-btn {
-            display: block;
-            width: 100%;
-            background: linear-gradient(135deg, #fbbf24, #f59e0b);
-            color: #0a0e1a;
-            border: none;
-            padding: 16px;
-            font-size: 16px;
-            font-weight: 700;
-            border-radius: 60px;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            margin: 20px 0 10px;
-            transition: all 0.3s;
-        }
-        
-        .bottom-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 30px -10px rgba(251,191,36,0.4);
-        }
-        
-        .badge {
-            display: inline-block;
-            background: rgba(251,191,36,0.15);
-            padding: 5px 14px;
-            border-radius: 30px;
-            font-size: 11px;
-            color: #fbbf24;
-            margin-bottom: 16px;
-        }
-        
-        .footer {
-            padding: 16px 24px;
-            text-align: center;
-            border-top: 1px solid rgba(255,255,255,0.05);
-            background: #0a0e1a;
-        }
-        
-        .footer-text {
-            font-size: 10px;
-            color: #5b6380;
-        }
-        
-        .limited {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-<body>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forex Club | Smart Traders Community</title><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family: 'Segoe UI',sans-serif;
+  background:#0b0f1a;
+  color:#fff;
+}
+.container{
+  max-width:520px;
+  margin:auto;
+  padding:16px;
+}
+.card{
+  background:#11162a;
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+.header{
+  text-align:center;
+  padding:30px 20px;
+  background:linear-gradient(135deg,#0d1324,#1a2140);
+}
+.logo{
+  font-size:40px;
+  margin-bottom:10px;
+}
+h1{font-size:26px}
+p{color:#9aa3b2;font-size:13px}
+.badge{
+  display:inline-block;
+  margin-top:12px;
+  padding:6px 12px;
+  border-radius:20px;
+  background:#1f2a48;
+  font-size:12px;
+}
+.btn{
+  display:block;
+  margin-top:18px;
+  padding:14px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:bold;
+  text-align:center;
+  background:#fbbf24;
+  color:#000;
+}
+.stats{
+  display:flex;
+  justify-content:space-around;
+  padding:16px;
+  background:#0d1324;
+}
+.stat{text-align:center}
+.stat h2{color:#fbbf24}
+.section{padding:20px}
+.feature{
+  background:#161c35;
+  padding:14px;
+  border-radius:16px;
+  margin-bottom:10px;
+}
+.footer{
+  text-align:center;
+  font-size:11px;
+  color:#777;
+  padding:15px;
+}
+</style></head><body>
 <div class="container">
-    <div class="card">
-        
-        <div class="header">
-            <div class="logo">📊</div>
-            <h1>Forex Club</h1>
-            <p>Professional Trading Signals on Telegram</p>
-            <div class="rating">
-                <span>⭐ 4.9 Rating</span>
-                <span>🔒 Verified</span>
-                <span>💰 Free</span>
-            </div>
-            
-            <!-- TOP BUTTON -->
-            <a href="https://t.me/+3zAwhI6i5pIwOGY0" class="top-btn" target="_blank"
-               onclick="gtag_report_conversion('https://t.me/+3zAwhI6i5pIwOGY0'); fbq('track', 'Lead'); return true;">
-                📱 Join Telegram Channel →
-            </a>
-        </div>
-        
-        <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number">2,847</div>
-                <div class="stat-label">Active Members</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">89%</div>
-                <div class="stat-label">Win Rate</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Support</div>
-            </div>
-        </div>
-        
-        <div class="content">
-            
-            <div class="limited">
-                <div class="badge">🔥 LIMITED SPOTS — 47 LEFT TODAY</div>
-            </div>
-            
-            <div class="feature-list">
-                <div class="feature">
-                    <div class="feature-icon">📈</div>
-                    <div class="feature-text">
-                        <div class="feature-title">Daily XAUUSD Signals</div>
-                        <div class="feature-desc">6-8 premium signals with entry, SL & TP</div>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">⏱️</div>
-                    <div class="feature-text">
-                        <div class="feature-title">Real-time Alerts</div>
-                        <div class="feature-desc">London & NY session coverage</div>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🆓</div>
-                    <div class="feature-text">
-                        <div class="feature-title">100% Free</div>
-                        <div class="feature-desc">No fees, no premium groups</div>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">👥</div>
-                    <div class="feature-text">
-                        <div class="feature-title">Active Community</div>
-                        <div class="feature-desc">Discuss with 2,800+ traders</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="steps">
-                <div class="step">
-                    <div class="step-num">1</div>
-                    <div class="step-text">Click "Join Telegram Channel"</div>
-                </div>
-                <div class="step">
-                    <div class="step-num">2</div>
-                    <div class="step-text">Open Telegram App</div>
-                </div>
-                <div class="step">
-                    <div class="step-num">3</div>
-                    <div class="step-text">Start Receiving Signals</div>
-                </div>
-            </div>
-            
-            <!-- BOTTOM BUTTON -->
-            <a href="https://t.me/+3zAwhI6i5pIwOGY0" class="bottom-btn" target="_blank"
-               onclick="gtag_report_conversion('https://t.me/+3zAwhI6i5pIwOGY0'); fbq('track', 'Lead'); return true;">
-                🔥 JOIN TELEGRAM CHANNEL NOW
-            </a>
-            
-        </div>
-        
-        <div class="footer">
-            <div class="footer-text">
-                🔒 No spam. Educational purposes only. Trading involves risk.
-            </div>
-        </div>
-        
-    </div>
-</div>
-
-<script>
-    let count = 2847;
-    let countElement = document.querySelectorAll('.stat-number')[0];
-    setInterval(() => {
-        count += Math.floor(Math.random() * 4) + 1;
-        if (countElement) countElement.textContent = count.toLocaleString();
-    }, 45000);
-</script>
-
-</body>
-                        </html>
+<div class="card"><div class="header">
+<div class="logo">📊</div>
+<h1>Forex Club</h1>
+<p>Join Serious Traders Making Consistent Profits</p>
+<div class="badge">🔥 High Engagement Community</div>
+<a href="https://t.me/+3zAwhI6i5pIwOGY0" class="btn">Join Telegram Now</a>
+</div><div class="stats">
+<div class="stat"><h2>2.8K+</h2><p>Members</p></div>
+<div class="stat"><h2>89%</h2><p>Accuracy</p></div>
+<div class="stat"><h2>Daily</h2><p>Signals</p></div>
+</div><div class="section">
+<div class="feature">📈 Live
