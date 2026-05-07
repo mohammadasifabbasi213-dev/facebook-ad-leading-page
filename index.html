@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Forex Club | Verified Trading Community</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Meta Pixel Code -->
+<title>Forex Club | Professional Gold Trading Community</title>
+
+<meta name="description" content="Join Forex Club - Professional Gold Trading Signals & Learning Community. Real-time XAUUSD analysis, beginner friendly education and market updates." />
+
+<!-- Facebook Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+{
+if(f.fbq)return;
+n=f.fbq=function(){
+n.callMethod ?
+n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+};
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '1295139908613539');
@@ -28,91 +42,376 @@ src="https://www.facebook.com/tr?id=1295139908613539&ev=PageView&noscript=1"/>
 <!-- End Meta Pixel Code -->
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',sans-serif;background:linear-gradient(180deg,#0b0f1a,#0f172a);color:#fff}
-.container{max-width:520px;margin:auto;padding:16px}
-.card{background:#11162a;border-radius:30px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.8);border:1px solid rgba(255,215,0,.15)}
-.header{text-align:center;padding:34px 20px;background:radial-gradient(1200px 400px at 50% -100px,rgba(251,191,36,.18),transparent),linear-gradient(135deg,#0d1324,#1a2140)}
-.logo{font-size:46px;margin-bottom:8px}
-h1{font-size:26px;font-weight:800}
-p{color:#9aa3b2;font-size:13px;margin-top:6px}
-.badge{margin-top:12px;padding:7px 16px;border-radius:30px;background:rgba(251,191,36,.12);font-size:12px;color:#fbbf24}
-.timer{margin-top:10px;font-size:13px;color:#f87171}
-.btn{display:block;margin-top:18px;padding:16px;border-radius:50px;text-decoration:none;font-weight:800;text-align:center;background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#000}
-.stats{display:flex;justify-content:space-around;padding:16px;background:#0d1324}
-.section{padding:20px}
-.feature{background:#161c35;padding:14px;border-radius:14px;margin-bottom:10px;font-size:13px}
-.footer{text-align:center;font-size:11px;color:#777;padding:16px}
-.sticky{position:sticky;bottom:10px;padding:0 16px 16px}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#050816;
+color:#fff;
+overflow-x:hidden;
+}
+
+.container{
+max-width:520px;
+margin:auto;
+padding:16px;
+}
+
+.card{
+background:#0f172a;
+border-radius:30px;
+overflow:hidden;
+box-shadow:0 30px 80px rgba(0,0,0,.8);
+border:1px solid rgba(255,215,0,.12);
+}
+
+/* HERO IMAGE */
+
+.hero{
+position:relative;
+height:320px;
+background:
+linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.8)),
+url('https://images.unsplash.com/photo-1642104704074-907c0698cbd9?q=80&w=1200&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:flex-end;
+padding:24px;
+}
+
+.overlay{
+width:100%;
+}
+
+.logo{
+font-size:18px;
+font-weight:700;
+color:#fbbf24;
+margin-bottom:10px;
+letter-spacing:1px;
+}
+
+h1{
+font-size:30px;
+font-weight:800;
+line-height:1.2;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:14px;
+color:#d1d5db;
+line-height:1.6;
+}
+
+.badge{
+display:inline-block;
+margin-top:14px;
+padding:8px 16px;
+border-radius:50px;
+background:rgba(251,191,36,.15);
+border:1px solid rgba(251,191,36,.25);
+font-size:12px;
+font-weight:600;
+color:#fbbf24;
+}
+
+.timer{
+margin-top:12px;
+font-size:13px;
+color:#f87171;
+font-weight:600;
+}
+
+/* BUTTON */
+
+.btn{
+display:block;
+width:100%;
+padding:17px;
+border-radius:50px;
+text-decoration:none;
+font-weight:800;
+text-align:center;
+background:linear-gradient(135deg,#fbbf24,#f59e0b);
+color:#000;
+margin-top:18px;
+font-size:16px;
+transition:.3s;
+box-shadow:0 10px 25px rgba(251,191,36,.3);
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+/* STATS */
+
+.stats{
+display:flex;
+justify-content:space-between;
+padding:22px 14px;
+background:#0b1220;
+border-top:1px solid rgba(255,255,255,.05);
+border-bottom:1px solid rgba(255,255,255,.05);
+text-align:center;
+}
+
+.stats div{
+flex:1;
+}
+
+.stats h2{
+font-size:24px;
+color:#fbbf24;
+margin-bottom:5px;
+}
+
+.stats p{
+font-size:12px;
+color:#94a3b8;
+}
+
+/* CONTENT */
+
+.section{
+padding:22px;
+}
+
+.section-title{
+font-size:20px;
+font-weight:700;
+margin-bottom:18px;
+}
+
+.feature{
+background:#131c31;
+padding:16px;
+border-radius:16px;
+margin-bottom:12px;
+font-size:14px;
+line-height:1.5;
+border:1px solid rgba(255,255,255,.04);
+}
+
+.feature span{
+color:#fbbf24;
+font-weight:700;
+}
+
+/* TRUST BOX */
+
+.trust{
+background:linear-gradient(135deg,#111827,#1e293b);
+padding:18px;
+border-radius:20px;
+margin-top:10px;
+border:1px solid rgba(251,191,36,.1);
+}
+
+.trust h3{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.trust p{
+font-size:13px;
+line-height:1.7;
+color:#cbd5e1;
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+font-size:11px;
+color:#6b7280;
+padding:18px;
+line-height:1.6;
+}
+
+/* STICKY BUTTON */
+
+.sticky{
+position:sticky;
+bottom:10px;
+padding:0 16px 16px;
+z-index:100;
+}
+
 </style>
 </head>
 
 <body>
 
 <div class="container">
+
 <div class="card">
 
-<div class="header">
-<div class="logo">📊</div>
-<h1>Forex Club</h1>
-<p>Professional Forex Signals & Learning Community</p>
-<div class="badge">✔ Verified • Free Access • No Upsells</div>
-<div class="timer" id="countdown">⏳ Access closing in: 05:00</div>
+<!-- HERO -->
 
-<!-- BUTTON WITH LEAD TRACKING -->
-<a href="https://t.me/+3zAwhI6i5pIwOGY0" 
-class="btn" 
-onclick="fbq('track','Lead');">
-Join Free Telegram Channel
+<div class="hero">
+
+<div class="overlay">
+
+<div class="logo">
+FOREX CLUB
+</div>
+
+<h1>
+Professional Gold Trading Community
+</h1>
+
+<div class="subtitle">
+Join thousands of traders receiving real-time Gold (XAUUSD) market analysis, trading ideas and educational content daily.
+</div>
+
+<div class="badge">
+✔ Verified Community • Free Access • Beginner Friendly
+</div>
+
+<div class="timer" id="countdown">
+⏳ Limited Access Closing In: 05:00
+</div>
+
+<a href="https://t.me/+3zAwhI6i5pIwOGY0"
+class="btn"
+onclick="trackLead()">
+🚀 Join Free Telegram Channel
 </a>
 
 </div>
+</div>
+
+<!-- STATS -->
 
 <div class="stats">
-<div><h2 id="members">2102+</h2><p>Members</p></div>
-<div><h2>Daily</h2><p>Signals</p></div>
-<div><h2>24/7</h2><p>Support</p></div>
+
+<div>
+<h2 id="members">2102+</h2>
+<p>Active Members</p>
 </div>
 
-<div class="section">
-<div class="feature">📈 Gold (XAUUSD) ideas</div>
-<div class="feature">⚡ Real-time alerts</div>
-<div class="feature">📊 Beginner friendly</div>
-<div class="feature">👥 Community support</div>
+<div>
+<h2>Daily</h2>
+<p>Gold Signals</p>
 </div>
 
+<div>
+<h2>24/7</h2>
+<p>Market Support</p>
+</div>
+
+</div>
+
+<!-- FEATURES -->
+
 <div class="section">
-<a href="https://t.me/+3zAwhI6i5pIwOGY0" 
-class="btn" 
-onclick="fbq('track','Lead');">
-🚀 Join & Start Learning
+
+<div class="section-title">
+Why Traders Join Us
+</div>
+
+<div class="feature">
+<span>📈 Professional XAUUSD Analysis</span><br>
+Get high-quality Gold market insights and trading opportunities daily.
+</div>
+
+<div class="feature">
+<span>⚡ Instant Market Alerts</span><br>
+Receive real-time updates during major market movements and news events.
+</div>
+
+<div class="feature">
+<span>🎯 Beginner Friendly Learning</span><br>
+Easy-to-understand trading education designed for new traders.
+</div>
+
+<div class="feature">
+<span>👥 Supportive Trading Community</span><br>
+Connect with traders, share ideas and improve your trading skills together.
+</div>
+
+<div class="trust">
+
+<h3>
+Trusted By Gold Traders Worldwide
+</h3>
+
+<p>
+Forex Club helps traders stay updated with professional market analysis, educational content and Gold trading opportunities in a simple and easy-to-follow format.
+</p>
+
+</div>
+
+<a href="https://t.me/+3zAwhI6i5pIwOGY0"
+class="btn"
+onclick="trackLead()">
+🔥 Join & Start Learning Today
 </a>
+
 </div>
+
+<!-- FOOTER -->
 
 <div class="footer">
-Risk Disclaimer: Trading Forex carries high risk.
+Risk Disclaimer: Forex and Gold trading involve substantial risk and may not be suitable for all investors. Trade responsibly.
 </div>
 
 </div>
+
+<!-- STICKY CTA -->
 
 <div class="sticky">
-<a href="https://t.me/+3zAwhI6i5pIwOGY0" 
-class="btn" 
-onclick="fbq('track','Lead');">
-🔥 Join Now
+
+<a href="https://t.me/+3zAwhI6i5pIwOGY0"
+class="btn"
+onclick="trackLead()">
+💰 Join Gold Trading Community
 </a>
+
 </div>
 
 </div>
 
 <script>
-let time=300;
-setInterval(()=>{
- let m=Math.floor(time/60);
- let s=time%60;
- document.getElementById('countdown').innerText=`⏳ Access closing in: ${m}:${s<10?'0'+s:s}`;
- if(time>0) time--;
+
+/* COUNTDOWN TIMER */
+
+let time = 300;
+
+setInterval(() => {
+
+let m = Math.floor(time / 60);
+let s = time % 60;
+
+document.getElementById('countdown').innerText =
+`⏳ Limited Access Closing In: ${m}:${s < 10 ? '0'+s : s}`;
+
+if(time > 0){
+time--;
+}
+
 },1000);
+
+/* META PIXEL LEAD TRACKING */
+
+function trackLead(){
+
+fbq('track', 'Lead');
+
+fbq('trackCustom', 'TelegramJoinClick', {
+button_location: window.location.href
+});
+
+}
+
 </script>
 
 </body>
