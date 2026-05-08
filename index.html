@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Forex Club | Gold Trading Signals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forex Gold Club | VIP Gold Signals</title>
 
-<!-- FACEBOOK PIXEL -->
+<!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s){
-if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
@@ -16,137 +16,212 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', 'YOUR_PIXEL_ID_HERE');
+fbq('init', '1295139908613539');
 fbq('track', 'PageView');
+fbq('track', 'ViewContent');
 </script>
 
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1295139908613539&ev=PageView&noscript=1"/>
+</noscript>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
+*{margin:0;padding:0;box-sizing:border-box;}
 body{
-  margin:0;
-  font-family:Arial;
-  background:#0b0f1a;
-  color:white;
+font-family:'Poppins',sans-serif;
+background:#050816;
+color:#fff;
+overflow-x:hidden;
+}
+
+.container{max-width:520px;margin:auto;padding:16px;}
+
+.card{
+background:linear-gradient(180deg,#0b1020,#121933);
+border-radius:30px;
+overflow:hidden;
+box-shadow:0 25px 70px rgba(0,0,0,.8);
+border:1px solid rgba(255,215,0,.15);
 }
 
 .hero{
-  position:relative;
-  text-align:center;
-  padding:90px 20px;
-  background:url('https://images.unsplash.com/photo-1611974789855-9c2a0a6a8f0d?auto=format&fit=crop&w=1400&q=80') center/cover;
+position:relative;
+height:320px;
+background:url('https://images.unsplash.com/photo-1604594849809-dfedbc827105?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
 }
 
 .hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.75);
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(to bottom,rgba(0,0,0,.1),rgba(5,8,22,.95));
 }
 
-.content{
-  position:relative;
-  z-index:2;
-  max-width:800px;
-  margin:auto;
+.hero-content{
+position:absolute;
+bottom:25px;
+left:20px;
+right:20px;
+z-index:2;
 }
 
-.logo{color:#22c55e;font-weight:bold}
+.logo{
+width:70px;height:70px;border-radius:20px;
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(10px);
+display:flex;align-items:center;justify-content:center;
+font-size:34px;margin-bottom:14px;
+border:1px solid rgba(255,255,255,.15);
+}
 
-h1{font-size:44px}
+h1{font-size:30px;font-weight:800;line-height:1.2;margin-bottom:8px;}
+.subtitle{font-size:14px;color:#d1d5db;line-height:1.6;}
 
-.highlight{color:#facc15}
+.badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;}
+.badge{
+padding:8px 14px;border-radius:30px;
+font-size:11px;font-weight:600;
+background:rgba(255,193,7,.12);
+color:#fbbf24;border:1px solid rgba(255,193,7,.25);
+}
 
-.subtitle{color:#cbd5e1}
+.timer{margin-top:14px;font-size:14px;font-weight:600;color:#f87171;}
+
+.section{padding:24px 20px;}
 
 .btn{
-  display:inline-block;
-  padding:14px 22px;
-  margin:10px;
-  background:#22c55e;
-  color:black;
-  font-weight:bold;
-  border-radius:10px;
-  text-decoration:none;
+display:block;width:100%;
+padding:17px;margin-top:16px;
+text-align:center;text-decoration:none;
+font-size:16px;font-weight:800;
+color:#000;border-radius:50px;
+background:linear-gradient(135deg,#ffd54f,#ffb300);
 }
 
-.btn:hover{transform:scale(1.05)}
+.stats{
+display:grid;grid-template-columns:repeat(3,1fr);
+gap:12px;padding:0 20px 24px;
+}
 
-.badge{
-  display:inline-block;
-  margin:5px;
-  padding:6px 10px;
-  background:rgba(255,255,255,0.08);
-  border-radius:20px;
-  font-size:13px;
+.stat-box{
+background:#161f3d;padding:18px 12px;
+text-align:center;border-radius:18px;
+}
+
+.stat-box h2{font-size:20px;color:#fbbf24;}
+.stat-box p{font-size:12px;color:#cbd5e1;}
+
+.heading{font-size:22px;font-weight:700;margin-bottom:18px;}
+
+.feature{
+display:flex;gap:14px;
+background:#151d39;padding:16px;
+border-radius:18px;margin-bottom:14px;
+}
+
+.feature-icon{
+width:48px;height:48px;border-radius:14px;
+background:rgba(255,193,7,.12);
+display:flex;align-items:center;justify-content:center;
+font-size:22px;
+}
+
+.feature-text h3{font-size:15px;}
+.feature-text p{font-size:12px;color:#94a3b8;}
+
+.testimonial{
+background:linear-gradient(135deg,#1b2447,#101729);
+padding:18px;border-radius:20px;
+margin-top:20px;
+}
+
+.footer{
+text-align:center;font-size:11px;
+color:#94a3b8;padding:22px;
 }
 
 .sticky{
-  position:fixed;
-  bottom:15px;
-  left:50%;
-  transform:translateX(-50%);
-  background:#facc15;
-  color:black;
-  padding:12px 18px;
-  border-radius:50px;
-  font-weight:bold;
+position:sticky;bottom:10px;padding:0 16px 16px;
 }
 </style>
 </head>
 
 <body>
 
+<div class="container">
+<div class="card">
+
 <div class="hero">
-  <div class="content">
+<div class="hero-content">
+<div class="logo">📈</div>
+<h1>VIP Gold Trading Signals</h1>
+<p class="subtitle">Daily XAUUSD signals, analysis & trading alerts on Telegram.</p>
 
-    <div class="logo">FOREX CLUB • PRO TRADING</div>
-
-    <!-- A/B TEST HEADLINE -->
-    <h1 id="headline">
-      Smart <span class="highlight">Gold (XAUUSD)</span> Signals That Actually Work
-    </h1>
-
-    <div class="subtitle">
-      Get real-time trade alerts, structured analysis & risk-managed setups for consistent profits.
-    </div>
-
-    <div>
-      <span class="badge">✔ Verified Strategy</span>
-      <span class="badge">⚡ Live Alerts</span>
-      <span class="badge">🎯 High Accuracy</span>
-    </div>
-
-    <!-- TRACKED CTA -->
-    <a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0"
-       onclick="fbq('track', 'Lead');">
-       🚀 Join Free Now
-    </a>
-
-    <a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0"
-       onclick="fbq('track', 'InitiateCheckout');">
-       💬 Join Telegram
-    </a>
-
-  </div>
+<div class="badge-row">
+<div class="badge">✔ Verified</div>
+<div class="badge">🔥 Free Join</div>
+<div class="badge">⚡ Live Signals</div>
 </div>
 
-<div class="sticky" onclick="fbq('track', 'Lead'); window.location.href='https://t.me/+3zAwhI6i5pIwOGY0'">
-  🚀 Join Free Now
+<div class="timer" id="countdown">⏳ Free access closes in: 05:00</div>
+
+<a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0" onclick="fbq('track','Lead');">
+🚀 Join Free Telegram
+</a>
+</div>
+</div>
+
+<div class="section">
+<div class="heading">Why Join Us</div>
+
+<div class="feature"><div class="feature-icon">📊</div><div><h3>Gold Signals</h3><p>Daily XAUUSD setups.</p></div></div>
+<div class="feature"><div class="feature-icon">⚡</div><div><h3>Fast Alerts</h3><p>Instant entry updates.</p></div></div>
+<div class="feature"><div class="feature-icon">🎓</div><div><h3>Beginner Friendly</h3><p>Easy learning system.</p></div></div>
+<div class="feature"><div class="feature-icon">👥</div><div><h3>Community</h3><p>Active traders group.</p></div></div>
+</div>
+
+<div class="stats">
+<div class="stat-box"><h2>2100+</h2><p>Members</p></div>
+<div class="stat-box"><h2>Daily</h2><p>Signals</p></div>
+<div class="stat-box"><h2>24/7</h2><p>Support</p></div>
+</div>
+
+<div class="section">
+<div class="testimonial">
+<p>“Very accurate gold signals and fast alerts. Helped improve my trading.”</p>
+</div>
+
+<a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0" onclick="fbq('track','Lead');">
+🔥 Join Now
+</a>
+</div>
+
+<div class="footer">
+Risk Warning: Trading involves risk. Trade responsibly.
+</div>
+
+</div>
+
+<div class="sticky">
+<a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0">
+📲 Join Telegram
+</a>
+</div>
+
 </div>
 
 <script>
-/* A/B HEADLINE TEST */
-const headlines = [
-  "Smart Gold (XAUUSD) Signals That Actually Work",
-  "Win More Trades with Gold Market Signals",
-  "Professional Gold Trading Signals – Join Free"
-];
-
-let i = 0;
+let time = 300;
 setInterval(()=>{
-  i = (i+1) % headlines.length;
-  document.getElementById("headline").innerHTML =
-  headlines[i].replace("Gold", '<span class="highlight">Gold (XAUUSD)</span>');
-}, 5000);
+let m=Math.floor(time/60);
+let s=time%60;
+document.getElementById("countdown").innerText =
+`⏳ Free access closes in: ${m}:${s<10?'0'+s:s}`;
+if(time>0) time--;
+},1000);
 </script>
 
 </body>
