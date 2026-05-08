@@ -42,11 +42,13 @@ border-radius:25px;
 overflow:hidden;
 }
 
+/* HERO FIXED STACKING */
 .hero{
 position:relative;
 height:320px;
 background:url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1200&auto=format&fit=crop')
 center/cover no-repeat;
+z-index:0;
 }
 
 .hero::after{
@@ -54,6 +56,7 @@ content:'';
 position:absolute;
 inset:0;
 background:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(5,8,22,.95));
+z-index:1;
 }
 
 .hero-content{
@@ -61,6 +64,7 @@ position:absolute;
 bottom:20px;
 left:18px;
 right:18px;
+z-index:2;
 }
 
 .logo{
@@ -123,10 +127,6 @@ display:flex;
 gap:10px;
 }
 
-.feature-icon{
-font-size:20px;
-}
-
 .stats{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -181,10 +181,10 @@ padding:10px;
 
 <div class="timer" id="countdown">⏳ Free access closes in: 05:00</div>
 
-<a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0"
-onclick="fbq('track','Lead');">
+<a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0" target="_blank">
 🚀 Join Telegram Channel
 </a>
+
 </div>
 </div>
 
@@ -205,8 +205,7 @@ onclick="fbq('track','Lead');">
 
 <!-- CTA -->
 <div class="section">
-<a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0"
-onclick="fbq('track','Lead');">
+<a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0" target="_blank">
 🔥 Join Now
 </a>
 </div>
@@ -218,9 +217,9 @@ Risk Disclaimer: Trading involves risk. Only invest what you can afford to lose.
 
 </div>
 
-<!-- Sticky Button -->
+<!-- STICKY BUTTON -->
 <div class="sticky">
-<a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0">
+<a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0" target="_blank">
 📲 Join Now
 </a>
 </div>
