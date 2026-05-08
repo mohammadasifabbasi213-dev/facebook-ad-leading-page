@@ -6,13 +6,12 @@
 
 <title>Forex Gold Club | VIP Gold Signals</title>
 
-<!-- SEO META -->
-<meta name="description" content="Join Forex Gold Club for VIP Gold Trading Signals. Get real-time XAUUSD signals, market analysis, and expert trading alerts. Free access for limited time.">
+<meta name="description" content="Join Forex Gold Club for VIP Gold Trading Signals. Get real-time XAUUSD signals, market analysis, and expert trading alerts. Limited access available.">
 
 <meta name="keywords" content="Forex, Gold Trading, XAUUSD, Trading Signals, VIP Signals, Forex Club, Gold Signals">
 
 <meta property="og:title" content="Forex Gold Club | VIP Gold Signals">
-<meta property="og:description" content="Get free VIP Gold trading signals, instant alerts, and professional market analysis. Join our Telegram community now.">
+<meta property="og:description" content="Get free VIP Gold trading signals, instant alerts, and professional market analysis. Join now before spots close.">
 <meta property="og:type" content="website">
 
 <!-- Meta Pixel -->
@@ -91,11 +90,15 @@ color:#fbbf24;
 margin-right:5px;
 }
 
-.timer{
-margin-top:10px;
-color:#f87171;
-font-size:13px;
-font-weight:600;
+.limited{
+margin-top:12px;
+color:#fbbf24;
+font-size:14px;
+font-weight:700;
+background:rgba(255,193,7,.08);
+padding:10px;
+border-radius:12px;
+border:1px solid rgba(255,193,7,.2);
 }
 
 .btn{
@@ -137,15 +140,19 @@ border-radius:12px;
 
 .footer{
 text-align:center;
-font-size:11px;
-color:#94a3b8;
+font-size:12px;
+color:#cbd5e1;
 padding:20px;
 }
 
-.sticky{
-position:sticky;
-bottom:10px;
-padding:10px;
+.profit-box{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+padding:15px;
+border-radius:14px;
+color:#e2e8f0;
+font-size:13px;
+line-height:1.5;
+border:1px solid rgba(255,255,255,0.05);
 }
 </style>
 
@@ -167,7 +174,10 @@ padding:10px;
 <span class="badge">Free Access</span>
 <span class="badge">Live Signals</span>
 
-<div class="timer" id="countdown">⏳ Free access closes in: 05:00</div>
+<!-- LIMITED ACCESS (REPLACED TIMER) -->
+<div class="limited">
+⚡ Limited Access Available — Join before slots close
+</div>
 
 <a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0" target="_blank">
 🚀 Join Telegram Channel
@@ -179,9 +189,9 @@ padding:10px;
 <!-- FEATURES -->
 <div class="section">
 <div class="feature">📊 Gold Signals Daily</div>
-<div class="feature">⚡ Instant Alerts</div>
-<div class="feature">🎓 Beginner Friendly</div>
-<div class="feature">👥 Trading Community</div>
+<div class="feature">⚡ Instant Market Alerts</div>
+<div class="feature">🎓 Beginner Friendly System</div>
+<div class="feature">👥 Private Trading Community</div>
 </div>
 
 <!-- STATS -->
@@ -191,16 +201,19 @@ padding:10px;
 <div class="stat"><h2>24/7</h2><p>Support</p></div>
 </div>
 
+<!-- PROFIT DESCRIPTION (REPLACED DISCLAIMER) -->
+<div class="section">
+<div class="profit-box">
+📈 Our system focuses on high-probability Gold (XAUUSD) setups using professional market structure analysis.  
+The goal is consistent profit opportunities through disciplined entries, risk management, and real-time alerts delivered directly to members.
+</div>
+</div>
+
 <!-- CTA -->
 <div class="section">
 <a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0" target="_blank">
 🔥 Join Now
 </a>
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-Risk Disclaimer: Trading involves risk. Only invest what you can afford to lose.
 </div>
 
 </div>
@@ -213,17 +226,6 @@ Risk Disclaimer: Trading involves risk. Only invest what you can afford to lose.
 </div>
 
 </div>
-
-<script>
-let time=300;
-setInterval(()=>{
-let m=Math.floor(time/60);
-let s=time%60;
-document.getElementById("countdown").innerText=
-`⏳ Free access closes in: ${m}:${s<10?'0'+s:s}`;
-if(time>0) time--;
-},1000);
-</script>
 
 </body>
 </html>
