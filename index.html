@@ -2,129 +2,93 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Forex Club | Professional Gold Trading Community</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Forex Club | Gold Trading Signals</title>
+
+<!-- FACEBOOK PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', 'YOUR_PIXEL_ID_HERE');
+fbq('track', 'PageView');
+</script>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b0f1a;
-  color: white;
+body{
+  margin:0;
+  font-family:Arial;
+  background:#0b0f1a;
+  color:white;
 }
 
-.hero {
-  position: relative;
-  text-align: center;
-  padding: 80px 20px;
-  background: url('https://images.unsplash.com/photo-1611974789855-9c2a0a6a8f0d?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+.hero{
+  position:relative;
+  text-align:center;
+  padding:90px 20px;
+  background:url('https://images.unsplash.com/photo-1611974789855-9c2a0a6a8f0d?auto=format&fit=crop&w=1400&q=80') center/cover;
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.65);
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.75);
 }
 
-.hero > * {
-  position: relative;
-  z-index: 2;
+.content{
+  position:relative;
+  z-index:2;
+  max-width:800px;
+  margin:auto;
 }
 
-.logo {
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #22c55e;
+.logo{color:#22c55e;font-weight:bold}
+
+h1{font-size:44px}
+
+.highlight{color:#facc15}
+
+.subtitle{color:#cbd5e1}
+
+.btn{
+  display:inline-block;
+  padding:14px 22px;
+  margin:10px;
+  background:#22c55e;
+  color:black;
+  font-weight:bold;
+  border-radius:10px;
+  text-decoration:none;
 }
 
-h1 {
-  font-size: 42px;
-  margin: 20px 0;
+.btn:hover{transform:scale(1.05)}
+
+.badge{
+  display:inline-block;
+  margin:5px;
+  padding:6px 10px;
+  background:rgba(255,255,255,0.08);
+  border-radius:20px;
+  font-size:13px;
 }
 
-.highlight {
-  color: #facc15;
-}
-
-.subtitle {
-  max-width: 700px;
-  margin: 0 auto 20px;
-  color: #cbd5e1;
-}
-
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px 0;
-}
-
-.badge {
-  background: rgba(255,255,255,0.1);
-  padding: 8px 12px;
-  border-radius: 20px;
-  font-size: 14px;
-}
-
-.btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 20px;
-  background: #22c55e;
-  color: black;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 40px 20px;
-  background: #0f172a;
-  text-align: center;
-}
-
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.feature {
-  margin: 15px auto;
-  max-width: 600px;
-  background: rgba(255,255,255,0.05);
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.trading-info {
-  max-width: 800px;
-  margin: auto;
-  background: rgba(34,197,94,0.08);
-  padding: 20px;
-  border-radius: 12px;
-  line-height: 1.6;
-  color: #cbd5e1;
-}
-
-.footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 12px;
-  color: #94a3b8;
-  background: #020617;
+.sticky{
+  position:fixed;
+  bottom:15px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#facc15;
+  color:black;
+  padding:12px 18px;
+  border-radius:50px;
+  font-weight:bold;
 }
 </style>
 </head>
@@ -132,59 +96,58 @@ h1 {
 <body>
 
 <div class="hero">
-  <div class="logo">FOREX CLUB • PRO TRADING</div>
+  <div class="content">
 
-  <h1>Smart <span class="highlight">Gold (XAUUSD)</span> Signals</h1>
+    <div class="logo">FOREX CLUB • PRO TRADING</div>
 
-  <div class="subtitle">
-    Professional market analysis, real-time trade alerts, and structured risk management designed for consistent growth.
+    <!-- A/B TEST HEADLINE -->
+    <h1 id="headline">
+      Smart <span class="highlight">Gold (XAUUSD)</span> Signals That Actually Work
+    </h1>
+
+    <div class="subtitle">
+      Get real-time trade alerts, structured analysis & risk-managed setups for consistent profits.
+    </div>
+
+    <div>
+      <span class="badge">✔ Verified Strategy</span>
+      <span class="badge">⚡ Live Alerts</span>
+      <span class="badge">🎯 High Accuracy</span>
+    </div>
+
+    <!-- TRACKED CTA -->
+    <a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0"
+       onclick="fbq('track', 'Lead');">
+       🚀 Join Free Now
+    </a>
+
+    <a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0"
+       onclick="fbq('track', 'InitiateCheckout');">
+       💬 Join Telegram
+    </a>
+
   </div>
-
-  <div class="badges">
-    <div class="badge">✔ Verified Strategy</div>
-    <div class="badge">⚡ Live Signals</div>
-    <div class="badge">🎯 High Accuracy</div>
-    <div class="badge">📊 Risk Managed</div>
-  </div>
-
-  <a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0">🚀 Join Free Now</a>
-  <a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0">💬 Join Telegram Community</a>
 </div>
 
-<div class="stats">
-  <div><h2>2100+</h2><p>Traders</p></div>
-  <div><h2>24/7</h2><p>Market Watch</p></div>
-  <div><h2>Live</h2><p>Signals</p></div>
+<div class="sticky" onclick="fbq('track', 'Lead'); window.location.href='https://t.me/+3zAwhI6i5pIwOGY0'">
+  🚀 Join Free Now
 </div>
 
-<div class="section">
-  <div class="section-title">Why Traders Join Us</div>
+<script>
+/* A/B HEADLINE TEST */
+const headlines = [
+  "Smart Gold (XAUUSD) Signals That Actually Work",
+  "Win More Trades with Gold Market Signals",
+  "Professional Gold Trading Signals – Join Free"
+];
 
-  <div class="feature">🎯 Precision Entries<br>High probability Gold setups based on technical structure.</div>
-  <div class="feature">⚡ Instant Alerts<br>Real-time notifications directly to your phone.</div>
-  <div class="feature">🧠 Simple System<br>Easy to follow strategy for beginners & pros.</div>
-  <div class="feature">📊 Risk Control<br>Proper lot sizing and capital protection rules.</div>
-</div>
-
-<!-- NEW TRADING DETAILS SECTION -->
-<div class="section">
-  <div class="section-title">Trading Approach & Strategy</div>
-
-  <div class="trading-info">
-    We focus on <b>XAUUSD (Gold)</b> price action combined with smart market structure analysis.  
-    Our signals are based on trend direction, liquidity zones, and risk-reward optimization.  
-    Every trade includes clear Stop Loss and Take Profit levels to protect capital and maximize consistency.  
-    <br><br>
-    ⚠️ Discipline + Risk Management = Long-Term Success in Trading
-  </div>
-
-  <br>
-  <a class="btn" href="https://t.me/+3zAwhI6i5pIwOGY0">📩 Join Free Telegram</a>
-</div>
-
-<div class="footer">
-  Risk Disclaimer: Trading involves risk. Only invest what you can afford to lose.
-</div>
+let i = 0;
+setInterval(()=>{
+  i = (i+1) % headlines.length;
+  document.getElementById("headline").innerHTML =
+  headlines[i].replace("Gold", '<span class="highlight">Gold (XAUUSD)</span>');
+}, 5000);
+</script>
 
 </body>
 </html>
