@@ -2,105 +2,171 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Forex Club | Trading Signals</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forex Club | Verified Trading Signals</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family: Arial, sans-serif;
-    background: #0a0e1a;
-    padding: 16px;
 }
 
-.container {
-    max-width: 500px;
-    margin: auto;
+body{
+    background:#070b16;
+    color:#fff;
+    padding:16px;
 }
 
-.card {
-    background: #0f121f;
-    border-radius: 25px;
-    overflow: hidden;
-    border: 1px solid rgba(255,215,0,0.2);
+.container{
+    max-width:520px;
+    margin:auto;
 }
 
-.header {
-    text-align: center;
-    padding: 30px 20px;
+.card{
+    background: linear-gradient(180deg, #0f172a, #0b1020);
+    border-radius:28px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,0.08);
+    box-shadow:0 20px 60px rgba(0,0,0,0.6);
 }
 
-.logo {
-    width: 70px;
-    height: 70px;
-    background: gold;
-    border-radius: 20px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
+/* HEADER */
+.header{
+    text-align:center;
+    padding:35px 20px;
 }
 
-h1 {
-    color: #fff;
-    margin-top: 10px;
+.logo{
+    width:75px;
+    height:75px;
+    margin:auto;
+    border-radius:20px;
+    background: linear-gradient(135deg,#fbbf24,#f59e0b);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    box-shadow:0 10px 30px rgba(251,191,36,0.25);
 }
 
-p {
-    color: #aaa;
-    font-size: 13px;
+h1{
+    margin-top:12px;
+    font-size:26px;
+    font-weight:700;
 }
 
-.btn {
-    display: block;
-    text-align: center;
-    padding: 14px;
-    margin: 15px 0;
-    border-radius: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
-    color: #000;
+.sub{
+    color:#a1a1aa;
+    font-size:13px;
+    margin-top:6px;
 }
 
-.stats {
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    background: rgba(255,215,0,0.05);
+/* BADGES */
+.badges{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:14px;
 }
 
-.stat {
-    text-align: center;
-    color: #fff;
+.badge{
+    font-size:11px;
+    padding:5px 10px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.08);
+    color:#fbbf24;
 }
 
-.stat b {
-    color: gold;
-    font-size: 18px;
+/* BUTTON */
+.btn{
+    display:block;
+    text-align:center;
+    padding:14px;
+    margin:18px auto;
+    width:90%;
+    border-radius:50px;
+    background: linear-gradient(135deg,#fbbf24,#f59e0b);
+    color:#000;
+    font-weight:700;
+    text-decoration:none;
+    transition:0.3s;
 }
 
-.content {
-    padding: 20px;
+.btn:hover{
+    transform:translateY(-2px);
 }
 
-.feature {
-    padding: 10px 0;
-    color: #fff;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+/* STATS */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    background:rgba(255,255,255,0.03);
 }
 
-.footer {
-    text-align: center;
-    padding: 15px;
-    font-size: 11px;
-    color: #777;
+.stat{
+    padding:16px;
+    text-align:center;
+}
+
+.stat b{
+    display:block;
+    font-size:18px;
+    color:#fbbf24;
+}
+
+/* FEATURES */
+.content{
+    padding:20px;
+}
+
+.feature{
+    display:flex;
+    gap:10px;
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.icon{
+    width:40px;
+    height:40px;
+    background:rgba(251,191,36,0.1);
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.text h3{
+    font-size:14px;
+}
+
+.text p{
+    font-size:12px;
+    color:#a1a1aa;
+}
+
+/* TRUST SECTION */
+.trust{
+    margin:15px;
+    padding:15px;
+    background:rgba(34,197,94,0.08);
+    border:1px solid rgba(34,197,94,0.2);
+    border-radius:15px;
+    font-size:12px;
+    color:#86efac;
+    text-align:center;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    font-size:11px;
+    color:#71717a;
+    padding:15px;
 }
 </style>
 
@@ -111,39 +177,72 @@ p {
 <div class="container">
 <div class="card">
 
+<!-- HEADER -->
 <div class="header">
 <div class="logo">📊</div>
 <h1>Forex Club</h1>
-<p>Professional Trading Signals</p>
+<div class="sub">Verified Gold & Forex Trading Signals</div>
 
-<!-- TOP BUTTON -->
-<a href="https://t.me/+J7-Hvg1fwWxlYmFk" class="btn" target="_blank">
+<div class="badges">
+<span class="badge">🔒 Secure</span>
+<span class="badge">📈 High Accuracy</span>
+<span class="badge">⚡ Real-Time</span>
+</div>
+
+<a class="btn" href="https://t.me/+J7-Hvg1fwWxlYmFk" target="_blank">
 📱 Join Telegram Channel
 </a>
-
 </div>
 
+<!-- STATS -->
 <div class="stats">
-<div class="stat"><b>2847</b><br>Members</div>
-<div class="stat"><b>89%</b><br>Win Rate</div>
-<div class="stat"><b>24/7</b><br>Support</div>
+<div class="stat"><b>2,847+</b>Members</div>
+<div class="stat"><b>89%</b>Win Rate</div>
+<div class="stat"><b>24/7</b>Support</div>
 </div>
 
+<!-- FEATURES -->
 <div class="content">
-<div class="feature">📈 Daily Gold Signals</div>
-<div class="feature">⏱ Real-time Alerts</div>
-<div class="feature">👥 Active Community</div>
+
+<div class="feature">
+<div class="icon">📈</div>
+<div class="text">
+<h3>Daily Gold Signals</h3>
+<p>Entry, SL & TP with proper analysis</p>
+</div>
+</div>
+
+<div class="feature">
+<div class="icon">⏱</div>
+<div class="text">
+<h3>Live Market Alerts</h3>
+<p>London & New York sessions coverage</p>
+</div>
+</div>
+
+<div class="feature">
+<div class="icon">👥</div>
+<div class="text">
+<h3>Trading Community</h3>
+<p>Learn & grow with experienced traders</p>
+</div>
+</div>
+
+</div>
+
+<!-- TRUST -->
+<div class="trust">
+✔ No Fake Promises • ✔ Educational Content • ✔ Risk Management Focus
 </div>
 
 <!-- BOTTOM BUTTON -->
-<div style="padding:20px;">
-<a href="https://t.me/+J7-Hvg1fwWxlYmFk" class="btn" target="_blank">
-🔥 JOIN NOW ON TELEGRAM
+<a class="btn" href="https://t.me/+J7-Hvg1fwWxlYmFk" target="_blank">
+🔥 JOIN NOW — LIMITED ACCESS
 </a>
-</div>
 
+<!-- FOOTER -->
 <div class="footer">
-Trading involves risk. For educational purpose only.
+Trading involves risk. Always trade responsibly.
 </div>
 
 </div>
